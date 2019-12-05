@@ -1,5 +1,5 @@
-#!/Users/kbsf633/localrepos/flow/perl/perls/perl-5.30.1/bin/perl
-    eval 'exec /Users/kbsf633/localrepos/flow/perl/perls/perl-5.30.1/bin/perl -S $0 ${1+"$@"}'
+#!/flow/perl/perl-5.30.1/bin/perl
+    eval 'exec /flow/perl/perl-5.30.1/bin/perl -S $0 ${1+"$@"}'
         if $running_under_some_shell;
 
 # perlivp v5.30.1
@@ -45,7 +45,7 @@ my $pass__total = 0;
 my $error_total = 0;
 my $tests_total = 0;
 
-my $perlpath = '/Users/kbsf633/localrepos/flow/perl/perls/perl-5.30.1/bin/perl';
+my $perlpath = '/flow/perl/perl-5.30.1/bin/perl';
 my $useithreads = '';
 
 print "## Checking Perl binary via variable '\$perlpath' = $perlpath.\n" if $opt{'p'};
