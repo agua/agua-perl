@@ -1,0 +1,26 @@
+DBD::SQLite
+DBD::mysql
+JSON
+YAML::Tiny
+Convert::Binary::C
+AnyEvent --force
+File::Sort
+File::Copy::Recursive
+File::Remove
+FindBin::Real
+Getopt::Simple
+Method::Signatures::Modifiers
+Method::Signatures::Simple
+Moose::Role
+Moose::Util::TypeConstraints
+MooseX::Declare
+PadWalker
+PerlIO::eol
+Term::ANSIColor
+Term::ReadKey
+threads
+TryCatch
+vars
+Net::RabbitMQ --force --notest
+Acme::Damn
+UUID

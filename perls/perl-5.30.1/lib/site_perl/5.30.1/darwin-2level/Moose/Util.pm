@@ -137,6 +137,11 @@ sub _apply_all_roles {
 
     my @role_metas;
     foreach my $role (@$roles) {
+
+        # use Data::Dumper;
+        # print "Moose::Util::_apply_all_roles    role: $role\n";
+        # print Dumper  $role;
+
         my $meta;
 
         if ( blessed $role->[0] ) {
@@ -146,8 +151,15 @@ sub _apply_all_roles {
             _load_user_class( $role->[0] , $role->[1] );
             $meta = find_meta( $role->[0] );
         }
+        # print "Moose::Util::_apply_all_roles    meta: " . $meta . "\n";
+        # print "Moose::Util::_apply_all_roles    meta->isa('Moose::Meta::Role') : " . $meta->isa('Moose::Meta::Role') . "\n";
+        # print "Moose::Util::_apply_all_roles    meta =~'Moose::Meta::Role' : " . $meta=~ 'Moose::Meta::Role' . "\n";
+        # print Dumper  $meta;
 
+        # unless ($meta && $meta->isa('Moose::Meta::Role') ) {
         unless ($meta && $meta->isa('Moose::Meta::Role') ) {
+
+
             throw_exception( CanOnlyConsumeRole => role_name => $role->[0] );
         }
 
