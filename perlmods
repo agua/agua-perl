@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 File::Sort
 DBD::SQLite
 YAML
@@ -7,16 +8,31 @@ AnyEvent --force
 Coro
 DBI
 DBD::mysql
+=======
+DBD::SQLite
+DBD::mysql
+JSON
+YAML::Tiny
+Convert::Binary::C
+AnyEvent --force
+File::Sort
+>>>>>>> e121768b1945e702c8646d0701bb4b0e17c1a613
 File::Copy::Recursive
 File::Remove
 FindBin::Real
 Getopt::Simple
+<<<<<<< HEAD
 JSON
 Method::Signatures
 Method::Signatures::Modifiers
 Method::Signatures::Simple
 Moose::Role
 #Moose::Util
+=======
+Method::Signatures::Modifiers
+Method::Signatures::Simple
+Moose::Role
+>>>>>>> e121768b1945e702c8646d0701bb4b0e17c1a613
 Moose::Util::TypeConstraints
 MooseX::Declare
 PadWalker
@@ -26,7 +42,10 @@ Term::ReadKey
 threads
 TryCatch
 vars
+<<<<<<< HEAD
 YAML::Tiny
+=======
+>>>>>>> e121768b1945e702c8646d0701bb4b0e17c1a613
 Net::RabbitMQ --force --notest
 Acme::Damn
 UUID
